@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kornaek Namchan | UX/UI Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* ========= NAV ========= */
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+background:rgba(2,6,23,.95);
+z-index:1000;
+}
+
+.logo{
+font-size:20px;
+font-weight:600;
+background:linear-gradient(45deg,#00c9a7,#007bff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+}
+
+nav a:hover{color:#00c9a7}
+
+/* ===== MODERN HERO ===== */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 10%;
+background:linear-gradient(135deg,#020617,#0f172a,#020617);
+flex-wrap:wrap;
+}
+
+/* LEFT */
+.hero-left{
+max-width:550px;
+}
+
+.hero-left h1{
+font-size:3rem;
+line-height:1.2;
+}
+
+.gradient-text{
+background:linear-gradient(45deg,#7c3aed,#00c9a7);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero-left p{
+margin-top:15px;
+color:#94a3b8;
+}
+
+.hero-buttons{
+margin-top:25px;
+}
+
+.btn-primary{
+padding:12px 25px;
+background:linear-gradient(45deg,#7c3aed,#007bff);
+border-radius:30px;
+text-decoration:none;
+color:white;
+margin-right:15px;
+}
+
+.btn-outline{
+padding:12px 25px;
+border:1px solid #7c3aed;
+border-radius:30px;
+text-decoration:none;
+color:white;
+}
+
+/* RIGHT IMAGE */
+.hero-right{
+position:relative;
+}
+
+.profile-circle{
+width:320px;
+height:320px;
+border-radius:50%;
+overflow:hidden;
+border:4px solid #7c3aed;
+box-shadow:0 0 40px rgba(124,58,237,.6);
+}
+
+.profile-circle img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* FLOAT CARD */
+.floating-card{
+position:absolute;
+bottom:-20px;
+left:-40px;
+background:#1e293b;
+padding:15px 20px;
+border-radius:12px;
+font-size:14px;
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+/* STATS */
+.stats{
+display:flex;
+gap:40px;
+margin-top:30px;
+}
+
+.stat h3{
+color:#7c3aed;
+}
+
+@media(max-width:900px){
+.hero{
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+}
+
+/* ========= SECTION ========= */
+section{
+padding:100px 10%;
+}
+
+h2{
+color:#00c9a7;
+margin-bottom:30px;
+}
+
+/* ========= CARD ========= */
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:16px;
+margin-bottom:40px;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+ul{
+margin-left:20px;
+line-height:1.7;
+}
+
+/* ========= EMBED ========= */
+.embed-container{
+margin-top:20px;
+position:relative;
+width:100%;
+padding-bottom:56.25%;
+}
+
+.embed-container iframe{
+position:absolute;
+width:100%;
+height:100%;
+border:none;
+border-radius:12px;
+}
+
+/* ========= GRID ========= */
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+/* ========= FOOTER ========= */
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+color:#94a3b8;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<div class="logo">Kornaek Namchan</div>
+<div>
+<a href="#summary">Summary</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+<!-- LEFT -->
+<div class="hero-left">
+
+<h1>
+Hi, I'm <br>
+<span class="gradient-text">Kornaek Namchan</span>
+</h1>
+
+<h3>UX/UI Designer & Visual Developer</h3>
+
+<p>
+Designing intuitive digital experiences through analytical thinking
+and user-centered design principles.
+</p>
+
+<div class="hero-buttons">
+<a href="#projects" class="btn-primary">View Projects</a>
+<a href="#contact" class="btn-outline">
+Contact Me
+</a>
+</a>
+</a>
+</div>
+
+<div class="stats">
+<div class="stat">
+<h3>4+</h3>
+<p>Projects</p>
+</div>
+
+<div class="stat">
+<h3>UX/UI</h3>
+<p>Focused</p>
+</div>
+</div>
+
+</div>
+
+<!-- RIGHT -->
+<div class="hero-right">
+
+<div class="profile-circle">
+<img src="profile.jpg">
+</div>
+
+<div class="floating-card">
+Forgive yourself for not knowing what you didn’t know before you learned it.
+</div>
+
+</div>
+
+</div>
+
+<!-- SUMMARY (ของเดิม) -->
+<section id="summary">
+<h2>Professional Summary</h2>
+<div class="card">
+A motivated undergraduate student with a strong academic foundation in Mathematics and Computer Science. Actively seeking a UX/UI Design internship to apply analytical thinking and problem-solving skills to user-centered design challenges. Eager to gain hands-on experience in creating intuitive and engaging digital experiences, conduct user research, develop wireframes and prototypes, and contribute meaningful design solutions within a professional environment.
+</div>
+</section>
+
+<!-- SKILLS (ของเดิม) -->
+<section id="skills">
+<h2>Computer Skills</h2>
+
+<div class="skills-grid">
+
+<div class="card">
+<b>Design</b>
+<ul>
+<li>UX/UI Design</li>
+<li>Figma</li>
+<li>Wireframing & Prototyping</li>
+<li>User Flow Design</li>
+<li>Interface Design</li>
+</ul>
+</div>
+
+<div class="card">
+<b>Development</b>
+<ul>
+<li>HTML, CSS, Basic JavaScript</li>
+<li>PHP (Basic)</li>
+<li>SQL / MySQL</li>
+<li>Visual Basic</li>
+<li>Object-Oriented Programming (OOP)</li>
+</ul>
+</div>
+
+<div class="card">
+<b>Tools</b>
+<ul>
+<li>Figma</li>
+<li>Visual Studio</li>
+<li>Visual Studio Code</li>
+<li>Microsoft Excel</li>
+<li>Microsoft Access</li>
+<li>CapCut</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<!-- ✅ PROJECTS (แบบเดิม + UI ใหม่) -->
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="card">
+<h3>Flight Ticket Booking System</h3>
+<ul>
+<li>Designed and prototyped booking system using Figma</li>
+<li>User flow from flight search to payment confirmation</li>
+<li>Focused on usability and booking efficiency</li>
+</ul>
+
+<div class="embed-container">
+<iframe src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/l0E7LHxjw49PhCVgNEs32B/Untitled?node-id=19-290"></iframe>
+</div>
+</div>
+
+<div class="card">
+<h3>Medical Appointment & Patient Management System</h3>
+<ul>
+<li>Healthcare management UX design</li>
+<li>Doctor-patient scheduling system</li>
+<li>Medical information visualization</li>
+</ul>
+
+<div class="embed-container">
+<iframe src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/6vhVwn1F9LLpa77xVfwCWc/Radiology-UI?node-id=1-2"></iframe>
+</div>
+</div>
+
+<div class="card">
+<h3>Super Battle City Game (OOP Project)</h3>
+
+<div class="embed-container">
+<iframe src="https://drive.google.com/file/d/1hldkuedH_kx7tkPofKhmG0mQM_Kd5gMH/preview"></iframe>
+</div>
+</div>
+
+</section>
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+
+<div class="card" style="text-align:center">
+
+<h3>Kornaek Namchan</h3>
+
+<p style="margin-top:10px;">
+ Email : kornaek.nc@gmail.com
+</p>
+
+<p style="margin-top:10px;">
+ Phone : +66 82 559 4415
+</p>
+
+</div>
+</section>
+
+<footer>
+© 2026 Kornaek Namchan | UX/UI Designer
+</footer>
+
+</body>
+</html>
